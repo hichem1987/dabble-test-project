@@ -7,13 +7,15 @@ import { SideBarComponent } from './side-bar/side-bar.component';
 import { GridPanelComponent } from './grid-panel/grid-panel.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
 import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
+import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SideBarComponent,
     GridPanelComponent,
-    TopBarComponent
+    TopBarComponent,
+    ShoppingCartComponent
   ],
   imports: [
     BrowserModule,

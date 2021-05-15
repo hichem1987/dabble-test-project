@@ -1,0 +1,10 @@
+@import "src/styles/shared/variables.scss";
+
+.shoppingCart {
+  position: absolute;
+  z-index: 1;
+  right: 150px;
+  top: 150px;
+  width: 250px;
+  background: $foreground;
+}

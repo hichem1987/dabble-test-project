@@ -1,0 +1,119 @@
+@import "src/styles/shared/variables.scss";
+
+main {
+  height: 100%;
+
+  .content-wrapper {
+    height: 100%;
+    background-color: $foreground;
+    padding: 0 20px;
+
+    &.right-side {
+      height: 80px;
+      margin: 20px 0;
+      &.last-child{
+        margin-top: 0;
+        height: 90px;
+      }
+    }
+    &.second-level{
+      height: 200px;
+      margin: 20px 0;
+    }
+    &.last-level {
+      height: calc( 100vh - 600px);
+    }
+    .textHeader {
+      display: flex;
+      align-items: center;
+      padding: 30px 0;
+
+      h1 {
+        flex: 1;
+        text-align: left;
+        font-size: 1.5rem;
+      }
+
+      span {
+        flex: 1;
+        text-align: right;
+        font-size: small;
+      }
+    }
+
+    .circles {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+
+      .circle-container:nth-child(1) {
+        .circle {
+          color: $circle1Text;
+          background: $circle1Background
+        }
+      }
+
+      .circle-container:nth-child(2) {
+        .circle {
+          color: $circle2Text;
+          background: $circle2Background;
+        }
+      }
+
+      .circle-container:nth-child(3) {
+        .circle {
+          color: $circle3Text;
+          background: $circle3Background;
+        }
+      }
+
+      .circle-container:nth-child(4) {
+        .circle {
+          color: $circle4Text;
+          background: $circle4Background;
+        }
+      }
+
+      .circle-container {
+        position: relative;
+        width: 25%;
+
+        .circle {
+          width: 100px;
+          height: 100px;
+          line-height: 100px;
+          border-radius: 50%;
+          font-size: 17px;
+          text-align: center;
+        }
+
+        .text-container {
+          display: block;
+          position: absolute;
+          left: 61%;
+          top: 50%;
+          transform: translate(0%, -50%);
+
+          .first-level-text {
+            font-size: larger;
+            font-weight: bold;
+            margin-bottom: 5px;
+          }
+
+          .second-level-text {
+            margin-bottom: 0px;
+            padding-bottom: 0px;
+          }
+        }
+      }
+
+
+    }
+  }
+  .content-wrapper.right-side:last-child{
+    //margin-top: 0;
+    height: 90px;
+  }
+}
+

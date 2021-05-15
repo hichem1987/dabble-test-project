@@ -1,0 +1,110 @@
+@import "src/styles/shared/variables.scss";
+
+#sidebar {
+  /* don't forget to add all the previously mentioned styles here too */
+  transition: all 0.3s;
+}
+
+
+#sidebar ul.components {
+  padding: 20px 0;
+  border-bottom: 1px solid #47748b;
+}
+
+ul li a span {
+  display: inline-block;
+  margin: 10px 10px;
+}
+
+//hichem addition
+ul {
+  transition: all 0.3s;
+  li {
+    &.dropdownList{
+      margin-bottom: 1.5em;
+    }
+    &.firstList {
+      margin-bottom: 2em;
+      div {
+        background-color: $background;
+        margin: 20px 20px 0;
+        padding: 0;
+      }
+    }
+    .categories {
+      margin-left: 34px;
+      font-size: small;
+      opacity: 0.8;
+    }
+    div {
+      padding: 0 20px ;
+      min-height: 40px;
+    }
+
+    a {
+      display: block;
+      transition: all 0.3s;
+      .new-span, .counter, .arrowsIcons{
+        float: right;
+      }
+      .counter {
+        height: 25px;
+        width: 25px;
+        display: table-cell;
+        text-align: center;
+        vertical-align: middle;
+        border-radius: 50%;
+        background: $itemCountTextBackground;
+        color: $orangeColor;
+        line-height: 25px;
+      }
+      .arrowsIcons {
+        line-height: 24px;
+        vertical-align: middle;
+        font-weight:200;
+        font-size: 10pt;
+        opacity: 0.6;
+      }
+      .new-span {
+        font-size: small;
+        line-height: 23px;
+        padding: 0 7px;
+        border-radius: 15px;
+        color: $circle4Text;
+        background-color: $circle4Background;
+      }
+    }
+
+    .iconify, a {
+      color: $iconsColor;
+    }
+
+    a:hover {
+      opacity: 0.8;
+    }
+  }
+}
+
+
+//end hichem addition
+#sidebar ul p {
+  color: #fff;
+  padding: 10px;
+}
+
+#sidebar ul li a {
+  padding: 10px;
+  font-size: 1.1em;
+  display: block;
+}
+
+//#sidebar ul li a:hover {
+//  color: #7386D5;
+//  background: #fff;
+//}
+
+#sidebar ul li.active > a, a[aria-expanded="true"] {
+  //color: #fff;
+  //background: #6d7fcc;
+}
+
