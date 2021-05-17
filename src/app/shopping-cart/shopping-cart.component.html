@@ -47,4 +47,4 @@
     </div>
   </div>
 </div>
-<app-alert-transation-finished *ngIf="showAlert" [show]="showAlert"></app-alert-transation-finished>
+<app-alert-transation-finished *ngIf="showAlert" [show]="showAlert" (hideAlert)="showAlert=false"></app-alert-transation-finished>

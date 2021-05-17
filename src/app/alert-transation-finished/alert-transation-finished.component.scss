@@ -1,0 +1,13 @@
+@import "src/styles/shared/variables.scss";
+.alert {
+  z-index: 5;
+  background-color: $background;
+  color: $textColor;
+  height: 80px;
+  width: 30%;
+  margin: auto;
+  text-align: center;
+  .close{
+    color: $textColor;
+  }
+}
