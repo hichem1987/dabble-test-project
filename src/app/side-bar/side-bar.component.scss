@@ -25,6 +25,7 @@ ul {
     }
     &.firstList {
       margin-bottom: 2em;
+      svg { color: $iconsColor;}
       div {
         background-color: $background;
         margin: 20px 20px 0;
@@ -76,7 +77,10 @@ ul {
     }
 
     .iconify, a {
-      color: $iconsColor;
+      color:$textColor;
+      svg{
+        color: $iconsColor;
+      }
     }
 
     a:hover {

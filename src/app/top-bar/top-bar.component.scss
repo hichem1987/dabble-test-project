@@ -8,7 +8,9 @@ header {
       float: left;
       display: table;
       height: 100%;
-
+      @media (max-width: 991px) {
+        display: none;
+      }
       nav {
         display: table-cell;
         vertical-align: middle;
@@ -26,7 +28,7 @@ header {
             }
 
             a {
-              color: $textColor;
+              color: $iconsColor;
               text-decoration: none;
               transition: all 0.3s;
 
@@ -52,6 +54,7 @@ header {
 
       .cart {
         position: relative;
+        cursor: pointer;
         .cartCounter {
           position: absolute;
           height: 18px;
@@ -66,6 +69,13 @@ header {
           line-height: 18px;
           font-size: 11px;
           z-index: 1;
+          &.hidden {
+            visibility: hidden;
+          }
+
+          &.visible {
+            visibility: visible;
+          }
         }
       }
 
@@ -74,6 +84,7 @@ header {
         cursor: pointer;
         display: table-cell;
         vertical-align: middle;
+        color:$iconsColor;
         :hover{
           opacity: 0.8;
         }
@@ -87,6 +98,10 @@ header {
       .userInformations {
         display: table-cell;
         vertical-align: middle;
+        color: $textColor;
+        @media (max-width: 991px) {
+          display: none;
+        }
         p {
           margin-bottom: 0;
           &.role{

@@ -7,7 +7,6 @@ main {
     height: 100%;
     background-color: $foreground;
     padding: 0 20px;
-
     &.right-side {
       height: 80px;
       margin: 20px 0;
@@ -18,7 +17,14 @@ main {
     }
     &.second-level{
       height: 200px;
+      width: 100%;
       margin: 20px 0;
+      display: table;
+      .centered-text {
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+      }
     }
     &.last-level {
       height: calc( 100vh - 600px);
