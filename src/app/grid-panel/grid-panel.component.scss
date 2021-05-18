@@ -52,22 +52,37 @@ main {
       display: flex;
       flex-direction: row;
       justify-content: center;
-
+      margin-bottom: 30px;
+      @media (max-width:1259px)  {
+        display: table;
+      }
       .circle-container:nth-child(1) {
+        @media (min-width: 768px) and (max-width:1259px)  {
+          margin-bottom: 20px;
+          margin-right: 50px;
+        }
         .circle {
           color: $circle1Text;
-          background: $circle1Background
+          background: $circle1Background;
+
         }
       }
 
       .circle-container:nth-child(2) {
+        @media (min-width: 768px) and (max-width:1259px)  {
+          margin-bottom: 20px;
+        }
         .circle {
           color: $circle2Text;
           background: $circle2Background;
+
         }
       }
 
       .circle-container:nth-child(3) {
+        @media (min-width: 768px) and (max-width:1259px)  {
+          margin-right: 50px;
+        }
         .circle {
           color: $circle3Text;
           background: $circle3Background;
@@ -75,6 +90,9 @@ main {
       }
 
       .circle-container:nth-child(4) {
+        @media (max-width: 767px) {
+          margin-bottom: 0px;
+        }
         .circle {
           color: $circle4Text;
           background: $circle4Background;
@@ -84,7 +102,17 @@ main {
       .circle-container {
         position: relative;
         width: 25%;
-
+        @media  (max-width:1259px)  {
+          display: inline-block;
+        }
+        @media (min-width: 768px) and (max-width:1259px)  {
+          width: 43%;
+          //max-width: 196px;
+        }
+        @media (max-width: 767px) {
+          width: 100%;
+          margin-bottom: 30px;
+        }
         .circle {
           width: 100px;
           height: 100px;
@@ -92,24 +120,61 @@ main {
           border-radius: 50%;
           font-size: 17px;
           text-align: center;
+          @media (min-width: 1260px) and (max-width:1540px)  {
+            width: 75px;
+            height: 75px;
+            line-height: 75px;
+            font-size: 13px;
+          }
+          @media (max-width:1259px)  {
+            width: 77px;
+            height: 77px;
+            line-height: 77px;
+          }
         }
 
         .text-container {
           display: block;
           position: absolute;
-          left: 61%;
+          left: 52%;
+          right: auto;
           top: 50%;
           transform: translate(0%, -50%);
-
+          @media (max-width: 767px) {
+            left: auto;
+            right: 47%;
+          }
+          @media (min-width: 768px) and (max-width: 1259px) {
+            left: 46%;
+          }
           .first-level-text {
             font-size: larger;
             font-weight: bold;
             margin-bottom: 5px;
+            @media (min-width: 1260px) and (max-width:1540px)  {
+              font-size: 16px;
+            }
+            @media (min-width: 768px) and (max-width:1259px)  {
+              font-size: 25px;
+            }
+            @media (max-width: 767px) {
+              font-size: 27px;
+            }
           }
 
           .second-level-text {
             margin-bottom: 0px;
             padding-bottom: 0px;
+            @media (min-width: 1260px) and (max-width:1540px)  {
+              font-size: 13px;
+            }
+
+            @media (min-width: 992px) and (max-width:1259px)  {
+              font-size: 19px;
+            }
+            @media (max-width: 767px) {
+              font-size: 21px;
+            }
           }
         }
       }

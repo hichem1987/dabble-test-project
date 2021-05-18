@@ -1,5 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {AppService} from '../app.service';
+import {faBars} from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-top-bar',
@@ -13,6 +14,7 @@ export class TopBarComponent implements OnInit {
   shoppingCartItems;
   visibilityCart = false;
   isReady = false;
+  faBars = faBars;
 
   constructor(private appSvc: AppService) {
   }

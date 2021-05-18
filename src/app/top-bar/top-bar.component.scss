@@ -8,9 +8,37 @@ header {
       float: left;
       display: table;
       height: 100%;
-      @media (max-width: 991px) {
-        display: none;
+
+      .list-unstyled {
+        @media (max-width: 991px) {
+          display: none;
+        }
       }
+
+      .topnav {
+        @media (min-width: 992px) {
+          display: none;
+        }
+        display: table-cell;
+        vertical-align: middle;
+
+        .icon {
+
+          float: left;
+          margin-left: 14px;
+          color: $iconsColor;
+          font-size: 23px;
+          border: 0;
+          padding: 0;
+          background-color: transparent;
+          transition: all 0.3s;
+
+          &:hover {
+            opacity: 0.8;
+          }
+        }
+      }
+
       nav {
         display: table-cell;
         vertical-align: middle;
@@ -55,6 +83,7 @@ header {
       .cart {
         position: relative;
         cursor: pointer;
+
         .cartCounter {
           position: absolute;
           height: 18px;
@@ -69,6 +98,7 @@ header {
           line-height: 18px;
           font-size: 11px;
           z-index: 1;
+
           &.hidden {
             visibility: hidden;
           }
@@ -84,8 +114,9 @@ header {
         cursor: pointer;
         display: table-cell;
         vertical-align: middle;
-        color:$iconsColor;
-        :hover{
+        color: $iconsColor;
+
+        :hover {
           opacity: 0.8;
         }
       }
@@ -95,6 +126,7 @@ header {
         width: 25px;
         line-height: 25px;
       }
+
       .userInformations {
         display: table-cell;
         vertical-align: middle;
@@ -102,9 +134,11 @@ header {
         @media (max-width: 991px) {
           display: none;
         }
+
         p {
           margin-bottom: 0;
-          &.role{
+
+          &.role {
             text-align: right;
             font-size: small;
           }
