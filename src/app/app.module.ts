@@ -2,7 +2,6 @@ import {BrowserModule} from '@angular/platform-browser';
 import {NgModule} from '@angular/core';
 
 import {AppComponent} from './app.component';
-import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import {SideBarComponent} from './side-bar/side-bar.component';
 import {GridPanelComponent} from './grid-panel/grid-panel.component';
 import {TopBarComponent} from './top-bar/top-bar.component';
@@ -29,7 +28,6 @@ import { AlertTransationFinishedComponent } from './alert-transation-finished/al
     FontAwesomeModule,
     HttpClientModule,
     FormsModule,
-    NgbModule.forRoot()
   ],
   providers: [{
     provide: HTTP_INTERCEPTORS,

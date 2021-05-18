@@ -16,11 +16,19 @@
   color: $textColor;
   @media (max-width: 991px) {
     height: auto;
-    grid-gap: 10px;
+    //grid-gap: 10px;
+
     grid-template-columns: 6fr;
     grid-template-areas:
                "header header  header"
 							 "content content content";
+  }
+  @media (min-width: 768px) and (max-width: 991px) {
+    width: calc(100vw - 20px);
+  }
+
+  @media (max-width: 767px) {
+    width: calc(100vw - 20px);
   }
 }
 
@@ -63,6 +71,9 @@ p {
 }
 .header{
   margin: 20px 20px 0 0;
+  @media (max-width: 991px) {
+    margin-left: 20px;
+  }
   grid-area: header;
   height: 60px;
   background-color: $foreground;
@@ -72,6 +83,10 @@ p {
   margin-right:  20px  ;
   min-height: calc( 100vh - 120px);
   overflow: hidden;
+
+  @media (max-width: 991px) {
+    margin-left: 20px;
+  }
 }
 
 
