@@ -1,4 +1,4 @@
-# DabbleTestProject
+# DabbleAssessmentProject
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.3.
 The used technologies are Angular 8, Typescript, javascript, CSS3, HTML5, SASS.
